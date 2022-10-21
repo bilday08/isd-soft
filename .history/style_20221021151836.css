@@ -15,17 +15,17 @@ div{
     font-family: "Montserrat",sans-serif;
     font-weight: 400;
     width: 100%;
+    position: absolute;
     background-color: inherit;
     transform: translateY(0);
     transition: opacity 300ms ease;
-    position: absolute;
 }
 .btIconWidgetContent {
     margin-top: 0.5rem;
-    margin-left: 3.1em;
     line-height: inherit;
 }
 .btIconWidgetTitle {
+    margin-left: 3.5em;
     margin-top: 1.5em;
     opacity: .8;
     width: 3.2em;
