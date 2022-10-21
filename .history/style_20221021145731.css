@@ -24,9 +24,7 @@ div{
     transition: opacity 300ms ease;
 }
 .btIconWidgetContent {
-    width: 13.4rem;
-    height: 3.2rem;
-    margin-top: 0.5rem;
+    margin: 0 0 0 0.5em;
     line-height: inherit;
 }
 .btIconWidgetTitle {
