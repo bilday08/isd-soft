@@ -1,0 +1,39 @@
+html{
+    font-size: 62.5%;
+    /*1em=1rem=10px*/
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+}
+div{
+    display: inline-block;
+}
+.mainHeader{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 400;
+    background-color: inherit;
+    transform: translateY(0);
+    transition: opacity 300ms ease;
+    position: absolute;
+}
+.btIconWidgetContent {
+    margin-left: 3.1em;
+    line-height: inherit;
+}
+.btIconWidgetTitle {
+    margin-top: 1.5em;
+    margin-left: 3rem;
+    opacity: .8;
+    width: 3.2em;
+    height: 3.2em;
+}
+.btIconWidgetText{
+    opacity: 1;
+    display: inline-block;
+    line-height: inherit;
+    width: 9.7em;
+    height: 3.2em;
+}
