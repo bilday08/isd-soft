@@ -184,25 +184,6 @@ div.btButtonWidget {
     width: auto;
     margin: 0.5em;
 }
-/* .btButtonWidgetLink {
+.btButtonWidgetLink {
     background: linear-gradient(90deg,#fe6b19 0%,#ff5a00 100%);
 }
-div.btButtonWidget.btAccentGradientButton.btFilledButton .btButtonWidgetLink {
-    color: #fff;
-    box-shadow: 0 0 0 rgb(0 0 0 / 10%);
-}
-.btSoftRoundedButtons div.btButtonWidget .btButtonWidgetLink {
-    border-radius: 0.3rem;
-}
-div.btButtonWidget .btButtonWidgetLink {
-    padding: 1rem;
-}
-div.btButtonWidget .btButtonWidgetLink {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: stretch;
-    align-content: flex-start;
-    text-align: center;
-    transition: all 300ms ease;
-} */

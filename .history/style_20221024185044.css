@@ -184,7 +184,7 @@ div.btButtonWidget {
     width: auto;
     margin: 0.5em;
 }
-/* .btButtonWidgetLink {
+.btButtonWidgetLink {
     background: linear-gradient(90deg,#fe6b19 0%,#ff5a00 100%);
 }
 div.btButtonWidget.btAccentGradientButton.btFilledButton .btButtonWidgetLink {
@@ -205,4 +205,4 @@ div.btButtonWidget .btButtonWidgetLink {
     align-content: flex-start;
     text-align: center;
     transition: all 300ms ease;
-} */
+}
