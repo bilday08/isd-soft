@@ -174,11 +174,11 @@ img.btMainLogo {
     line-height: 1;
     max-width: 100%;
 }
-.btButtonWidget:not(:first-child) {
+div.btButtonWidget:not(:first-child) {
     margin-left: 2em;
     margin-right: 0;
 }
-.btButtonWidget {
+div.btButtonWidget {
     font-size: 1.0625em;
     display: inline-block;
     width: auto;
@@ -215,14 +215,15 @@ div.btButtonWidget .btButtonWidgetLink {
     box-shadow: 0 0 0 rgb(0 0 0 / 10%);
     border-radius: 0.3rem;
     display: block;
+    flex-flow: row nowrap;
     justify-content: center;
+    align-items: stretch;
+    align-content: flex-start;
     text-align: center;
-    width: 16rem;
-    height: 3rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    width: 15rem;
+    height: 3.5rem;
 }
-/* .btButtonWidgetContent{
-    display: block;
+.btButtonWidgetContent{
+    display: inline-block;
     text-align: center;
-} */
+}
