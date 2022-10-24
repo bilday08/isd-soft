@@ -1,0 +1,53 @@
+html{
+    font-size: 62.5%;
+    /*1em=1rem=10px*/
+}
+*, *:after, *:before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+}
+div{
+    display: inline-block;
+}
+/* .ptPageWrap{
+
+} */
+.mainHeader{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 400;
+    background-color: inherit;
+    transform: translateY(0);
+    transition: opacity 300ms ease;
+    position: absolute;
+}
+.topBar .topTools{
+    border-bottom: 1px solid rgba(255,255,255,.1);
+}
+.btIconWidgetContent {
+    margin-left: 3em;
+    line-height: inherit;
+}
+.btIconWidgetTitle {
+    margin-top: 0.5em;
+    opacity: .8;
+}
+.btIconWidgetText{
+    opacity: 1;
+    display: inline-block;
+    line-height: inherit;
+}
+.bt_bb_icon_holder{
+    opacity: .5;
+    font-size: 1.2em;
+}
+[bt_bb_icon_holder]:before{
+    font-family: FontAwesome5Brands;
+    content: attr(data-ico-fontawesome5brands);
+}
+.btTopToolsRight {
+    display: inline-flex;
+    text-align: right;
+    flex-grow: 1;
+}
