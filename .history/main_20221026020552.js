@@ -25,9 +25,4 @@ window.addEventListener("load", function () {
     line.style.left = `${left}px`;
     line.style.top = `${top + height + offsetBottom}px`;
   }
-
-  const menu = document.querySelector(".menu");
-  menu.addEventListener("mouseleave", function(){
-    line.style.width =0;
-  })
 } );

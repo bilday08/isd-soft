@@ -137,9 +137,6 @@ img.btMainLogo {
     position: absolute;
     right: 1rem;
 }
-.search:hover{
-    color: white;
-}
 .menuPort{
     font-size: 16px;
     font-weight: 500;
@@ -181,7 +178,6 @@ img.btMainLogo {
     margin-left: 2em;
     margin-right: 0;
 }
-
 .btButtonWidget {
     font-size: 1.0625em;
     display: inline-block;
@@ -194,9 +190,6 @@ img.btMainLogo {
     position: relative;
     top: -1rem;
     left: -0.1rem;
-}
-.btButtonWidgetText:hover {
-    color: white;
 }
 .btButtonWidgetLink{
     font-weight: 500;
@@ -265,25 +258,11 @@ img.btMainLogo {
     background-color: #fff;
     opacity: 0;
     visibility: hidden;
-    z-index: 1;
-    position: relative;
-}
-.menu-child-link:before {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 1.5em;
-    right: 1.5em;
-    bottom: 0;
-    height: 1px;
-    background-color: rgba(0,0,0,.1);
-    z-index: 0;
 }
 .menu-item:hover .menu-child-link{
     opacity: 1;
     visibility: visible;
     transition: all 300ms ease;
-    color: #000;
 }
 .line-effect {
     width: 0;
@@ -292,7 +271,4 @@ img.btMainLogo {
     position: fixed;
     pointer-events: none;
     transform: all 0.25s linear;
-}
-.menu-item:hover .menu-link {
-    color: white;
 }

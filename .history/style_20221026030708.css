@@ -137,9 +137,6 @@ img.btMainLogo {
     position: absolute;
     right: 1rem;
 }
-.search:hover{
-    color: white;
-}
 .menuPort{
     font-size: 16px;
     font-weight: 500;
@@ -181,7 +178,6 @@ img.btMainLogo {
     margin-left: 2em;
     margin-right: 0;
 }
-
 .btButtonWidget {
     font-size: 1.0625em;
     display: inline-block;
@@ -194,9 +190,6 @@ img.btMainLogo {
     position: relative;
     top: -1rem;
     left: -0.1rem;
-}
-.btButtonWidgetText:hover {
-    color: white;
 }
 .btButtonWidgetLink{
     font-weight: 500;
@@ -294,5 +287,8 @@ img.btMainLogo {
     transform: all 0.25s linear;
 }
 .menu-item:hover .menu-link {
+    color: white;
+}
+.topBarInMenuCell:hover {
     color: white;
 }
