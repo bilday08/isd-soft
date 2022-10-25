@@ -115,7 +115,7 @@ a:-webkit-any-link {
     line-height: 0;
     float: left;
     z-index: 6;
-    position: absolute; 
+    /* position: absolute; */
     width: auto;
     display: block;
 }
@@ -133,11 +133,17 @@ img.btMainLogo {
     display: none;
 }
 .search{
-    transform: rotate(90deg);
+    transform: rotate(90deg)
 }
 .menuPort{
     font-size: 16px;
     font-weight: 500;
+}
+.menuPort:after {
+    content: " ";
+    display: table;
+    width: 100%;
+    clear: both;
 }
 .topBarInMenu {
     line-height: inherit;
@@ -146,8 +152,6 @@ img.btMainLogo {
     align-items: center;
     height: 8rem;
     margin-left: 7rem;
-    position: relative;
-    left: 92rem;
 }
 .topBarInMenuCell {
     display: flex;
@@ -163,7 +167,7 @@ img.btMainLogo {
     margin: 0;
 }
 .btSearch{
-    line-height: 1;
+    line-height: 1
 }
 .bt_bb_icon {
     display: inline-block;
@@ -186,7 +190,7 @@ img.btMainLogo {
     font-size: 1.6rem;
     position: relative;
     top: -1rem;
-    left: -0.1rem;
+    left: -7rem;
 }
 .btButtonWidgetLink{
     font-weight: 500;
@@ -204,12 +208,4 @@ img.btMainLogo {
     width: 14rem;
     height: 3rem;
 }
-nav {
-    float: right;
-    list-style: none;
-    display: block;
-    transition: all 100ms ease 0s;
-    text-transform: uppercase;
-}
-
 

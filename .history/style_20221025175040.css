@@ -206,10 +206,10 @@ img.btMainLogo {
 }
 nav {
     float: right;
+    padding-left: 5rem;
     list-style: none;
     display: block;
     transition: all 100ms ease 0s;
-    text-transform: uppercase;
 }
 
 

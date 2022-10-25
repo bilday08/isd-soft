@@ -204,12 +204,59 @@ img.btMainLogo {
     width: 14rem;
     height: 3rem;
 }
-nav {
-    float: right;
+nav ul{
     list-style: none;
     display: block;
+    margin: 0;
+    padding: 0;
     transition: all 100ms ease 0s;
+}
+.menuPort > nav > ul > li > a{
+    padding: 0 35px 0 0;
+    float: left;
+    position: relative;
+    z-index: 5;
+    line-height: 80px;
+}
+.menuPort nav ul li a {
+    font-weight: 600;
     text-transform: uppercase;
 }
-
-
+.menuPort nav > ul > li > a:after {
+    content: "";
+    background-color: #ff5a00;
+    display: block;
+    transform: translateX(-100px);
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    height: 4px;
+    transition: 300ms ease all;
+    opacity: 0;
+}
+.menuPort > nav > ul ul {
+    position: absolute;
+    right: 0;
+    top: auto;
+    width: 220px;
+    margin: 0;
+    z-index: 1;
+    padding: 0;
+    pointer-events: none;
+    box-shadow: 0 3px 5px 0 rgb(0 0 0 / 10%);
+}
+.subToggler {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    width: 45px;
+    z-index: 80;
+    padding: 0;
+    text-align: center;
+    line-height: 10rem;
+    right: 1.5rem;
+}

@@ -115,7 +115,7 @@ a:-webkit-any-link {
     line-height: 0;
     float: left;
     z-index: 6;
-    position: absolute; 
+    /* position: absolute; */
     width: auto;
     display: block;
 }
@@ -134,6 +134,7 @@ img.btMainLogo {
 }
 .search{
     transform: rotate(90deg);
+    margin-left: -75rem;
 }
 .menuPort{
     font-size: 16px;
@@ -146,8 +147,6 @@ img.btMainLogo {
     align-items: center;
     height: 8rem;
     margin-left: 7rem;
-    position: relative;
-    left: 92rem;
 }
 .topBarInMenuCell {
     display: flex;
@@ -199,17 +198,10 @@ img.btMainLogo {
     box-shadow: 0 0 0 rgb(0 0 0 / 10%);
     width: 15rem;
     height: 3rem;
+    margin-left: 80rem;
 }
 .btButtonWidgetContent{
     width: 14rem;
     height: 3rem;
 }
-nav {
-    float: right;
-    list-style: none;
-    display: block;
-    transition: all 100ms ease 0s;
-    text-transform: uppercase;
-}
-
 

@@ -204,12 +204,10 @@ img.btMainLogo {
     width: 14rem;
     height: 3rem;
 }
-nav {
-    float: right;
+nav ul{
     list-style: none;
     display: block;
+    margin: 0;
+    padding: 0;
     transition: all 100ms ease 0s;
-    text-transform: uppercase;
 }
-
-
