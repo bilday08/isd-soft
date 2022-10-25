@@ -40,8 +40,8 @@ window.addEventListener("load", function () {
   line.className = "line-child-effect";
   document.body.appendChild(line);
   function handleHoverLink(event) {
-    const { top, left, width, height } = event.target.getBoundingClientRect();
-    console.log({ top, left, width, height, });
+    const { left, top, width, height } = event.target.getBoundingClientRect();
+    console.log({ left, top, width, height, });
     const offsetLeft = 5;
     line.style.width = `${width}px`;
     line.style.left = `${left}px`;

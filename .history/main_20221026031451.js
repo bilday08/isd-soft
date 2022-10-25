@@ -40,15 +40,15 @@ window.addEventListener("load", function () {
   line.className = "line-child-effect";
   document.body.appendChild(line);
   function handleHoverLink(event) {
-    const { top, left, width, height } = event.target.getBoundingClientRect();
-    console.log({ top, left, width, height, });
-    const offsetLeft = 5;
+    const { left, top, width, height } = event.target.getBoundingClientRect();
+    console.log({ left, top, width, height, });
+    const offsetBottom = 1;
     line.style.width = `${width}px`;
     line.style.left = `${left}px`;
-    line.style.top = `${top + height + offsetLeft}px`;
+    line.style.top = `${top + height + offsetBottom}px`;
   }
 
-  const menu = document.querySelector(".menu-child-item");
+  const menu = document.querySelector(".menu");
   menu.addEventListener("mouseleave", function(){
     line.style.width =0;
   })

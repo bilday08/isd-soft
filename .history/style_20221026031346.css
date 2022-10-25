@@ -296,4 +296,11 @@ img.btMainLogo {
 .menu-item:hover .menu-link {
     color: white;
 }
-
+.line-child-effect{
+    height: 0;
+    width: 4px;
+    background-color: #ff5a00;
+    position: fixed;
+    pointer-events: none;
+    transform: all 0.25s linear;
+}

@@ -268,6 +268,20 @@ img.btMainLogo {
     z-index: 1;
     position: relative;
 }
+.menu-child-link:after {
+    content: "";
+    width: 5px;
+    height: 52px;
+    background-color: #ff5a00;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    transform: all 0.25s linear;
+    z-index: -1;
+}
 .menu-child-link:before {
     content: "";
     display: block;

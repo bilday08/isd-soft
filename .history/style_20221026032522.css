@@ -268,6 +268,15 @@ img.btMainLogo {
     z-index: 1;
     position: relative;
 }
+.menu-child-item:after{
+    width: 1px;
+    height: 4px;
+    background-color: #ff5a00;
+    position: fixed;
+    pointer-events: none;
+    transform: all 0.25s linear;
+    z-index: -1;
+}
 .menu-child-link:before {
     content: "";
     display: block;

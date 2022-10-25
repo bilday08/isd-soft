@@ -270,6 +270,16 @@ img.btMainLogo {
 }
 .menu-child-link:before {
     content: "";
+    width: 4px;
+    height: 52px;
+    background-color: #ff5a00;
+    position: fixed;
+    pointer-events: none;
+    transform: all 0.25s linear;
+    z-index: -1;
+}
+.menu-child-link:before {
+    content: "";
     display: block;
     position: absolute;
     left: 1.5em;
