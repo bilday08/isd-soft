@@ -259,7 +259,6 @@ img.btMainLogo {
     visibility: hidden;
 }
 .menu-item:hover .menu-child-link{
-    color: none;
     opacity: 1;
     visibility: visible;
     transition: opacity 300ms ease;

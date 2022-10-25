@@ -235,32 +235,16 @@ img.btMainLogo {
     color: black;
     background-color: #fff;
 } */
-.menu-child-list{
-    display: block;
+.menu-child-link{
+    color: black;
+    height: 15rem;
+    width: 20rem;
     position: absolute;
     top: 10rem;
-    left: 22rem;
-    color: #000;
-}
-.menu-child-link{
-    /* position: absolute;
-    top: 10rem;
-    left: 24rem; */
+    left: 24rem;
     font-size: 1.5rem;
     font-weight: 600;
+    text-transform: uppercase;
     text-decoration: none;
     display: block;
-    text-align: left;
-    line-height: 3.6;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
-    background-color: #fff;
-    opacity: 0;
-    visibility: hidden;
-}
-.menu-item:hover .menu-child-link{
-    color: none;
-    opacity: 1;
-    visibility: visible;
-    transition: opacity 300ms ease;
 }

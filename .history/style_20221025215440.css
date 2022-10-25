@@ -134,8 +134,6 @@ img.btMainLogo {
 }
 .search{
     transform: rotate(90deg);
-    position: absolute;
-    right: 1rem;
 }
 .menuPort{
     font-size: 16px;
@@ -148,15 +146,15 @@ img.btMainLogo {
     align-items: center;
     height: 8rem;
     margin-left: 7rem;
-    position: absolute;
+    position: relative;
+    left: 30rem;
+    top: -9rem;
 }
 .topBarInMenuCell {
     display: flex;
     align-items: center;
     justify-content: center;
     line-height: 4.8rem;
-    position: relative;
-    left: 92rem;
 }
 .btIconWidget {
     position: relative;
@@ -207,60 +205,17 @@ img.btMainLogo {
     width: 14rem;
     height: 3rem;
 }
-/* /* nav {
+nav {
     list-style: none;
     display: block;
     text-transform: uppercase;
-} */
+}
 .menu{
     display: flex;
     align-items: center;
-    margin-left: 11rem;
-} 
+    margin-left: 10rem;
+}
 .menu-item{
     margin: 0 1rem;
 }
-.menu-link{
-    margin-right: 1rem;
-    padding-top: 2.8rem;
-    font-size: 1.5rem;
-    font-weight: 600;
-    display: inline-block;
-    position: relative;
-    white-space: nowrap;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-/* .menu-child{
-    color: black;
-    background-color: #fff;
-} */
-.menu-child-list{
-    display: block;
-    position: absolute;
-    top: 10rem;
-    left: 22rem;
-    color: #000;
-}
-.menu-child-link{
-    /* position: absolute;
-    top: 10rem;
-    left: 24rem; */
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-    line-height: 3.6;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
-    background-color: #fff;
-    opacity: 0;
-    visibility: hidden;
-}
-.menu-item:hover .menu-child-link{
-    color: none;
-    opacity: 1;
-    visibility: visible;
-    transition: opacity 300ms ease;
-}
+

@@ -239,8 +239,7 @@ img.btMainLogo {
     display: block;
     position: absolute;
     top: 10rem;
-    left: 22rem;
-    color: #000;
+    left: 23.7rem;
 }
 .menu-child-link{
     /* position: absolute;
@@ -252,15 +251,14 @@ img.btMainLogo {
     display: block;
     text-align: left;
     line-height: 3.6;
-    padding-left: 1.5em;
+    padding-left: 0.5em;
     padding-right: 1.5em;
-    background-color: #fff;
+    color: #000;
+    background-color: white;
     opacity: 0;
     visibility: hidden;
 }
-.menu-item:hover .menu-child-link{
-    color: none;
+.menu-link:hover .menu-child-link{
     opacity: 1;
     visibility: visible;
-    transition: opacity 300ms ease;
 }

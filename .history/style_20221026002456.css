@@ -252,15 +252,13 @@ img.btMainLogo {
     display: block;
     text-align: left;
     line-height: 3.6;
-    padding-left: 1.5em;
+    padding-left: 0.5em;
     padding-right: 1.5em;
     background-color: #fff;
     opacity: 0;
     visibility: hidden;
 }
 .menu-item:hover .menu-child-link{
-    color: none;
     opacity: 1;
     visibility: visible;
-    transition: opacity 300ms ease;
 }
