@@ -300,20 +300,6 @@ img.btMainLogo {
     display: block;
     position: absolute;
     top: 10rem;
-    left: 49.7rem;
-    color: #000;
-}
-.menu-child-listcareers{
-    display: block;
-    position: absolute;
-    top: 10rem;
-    left: 68.5rem;
-    color: #000;
-}
-.menu-child-listaboutus{
-    display: block;
-    position: absolute;
-    top: 10rem;
-    left: 79rem;
+    left: 58rem;
     color: #000;
 }
