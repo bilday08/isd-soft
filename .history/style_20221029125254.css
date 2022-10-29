@@ -25,14 +25,11 @@ div{
     box-sizing: border-box;
 }
 #myVideo:before {
-    content: "";
-    pointer-events: none;
     position: absolute;
     top: 0;
     left: 0;
-    bottom: 0;
     right: 0;
-    z-index: 2;
+    max-width: 100%;
 }
 .mainHeader{
     font-family: "Montserrat",sans-serif;
