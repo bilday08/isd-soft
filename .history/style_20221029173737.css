@@ -11,7 +11,7 @@ html{
 div{
     display: inline-block;
 }
-#myVideo {
+.myVideo {
     position: fixed;
     right: 0;
     bottom: 0;
@@ -315,16 +315,7 @@ img.btMainLogo {
     left: 79rem;
     color: #000;
 }
-.bt_bb_headline_tag{
-    font-size: 3.75rem;
-    display: block;
-    text-decoration: none;
-}
 .bt_bb_headline_content{
     display: block;
     text-decoration: none;
-    position: relative;
-}
-.large{
-    position: absolute;
 }

@@ -12,7 +12,7 @@ div{
     display: inline-block;
 }
 #myVideo {
-    position: fixed;
+    position: relative;
     right: 0;
     bottom: 0;
     left: 0;
@@ -23,7 +23,18 @@ div{
     perspective: 1000;
     backface-visibility: hidden;
     box-sizing: border-box;
-    opacity: 0.7;
+    z-index: 0;
+}
+#myVideo:before {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.452);
 }
 .mainHeader{
     font-family: "Montserrat",sans-serif;
@@ -314,17 +325,4 @@ img.btMainLogo {
     top: 10rem;
     left: 79rem;
     color: #000;
-}
-.bt_bb_headline_tag{
-    font-size: 3.75rem;
-    display: block;
-    text-decoration: none;
-}
-.bt_bb_headline_content{
-    display: block;
-    text-decoration: none;
-    position: relative;
-}
-.large{
-    position: absolute;
 }

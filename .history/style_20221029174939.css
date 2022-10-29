@@ -11,7 +11,7 @@ html{
 div{
     display: inline-block;
 }
-#myVideo {
+.myVideo {
     position: fixed;
     right: 0;
     bottom: 0;
@@ -23,7 +23,6 @@ div{
     perspective: 1000;
     backface-visibility: hidden;
     box-sizing: border-box;
-    opacity: 0.7;
 }
 .mainHeader{
     font-family: "Montserrat",sans-serif;
@@ -324,6 +323,8 @@ img.btMainLogo {
     display: block;
     text-decoration: none;
     position: relative;
+    left: 50%;
+    top: 50%;
 }
 .large{
     position: absolute;
