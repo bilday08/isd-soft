@@ -23,6 +23,16 @@ div{
     perspective: 1000;
     backface-visibility: hidden;
     box-sizing: border-box;
+    z-index: 0;
+}
+#myVideo:before{
+    content: "";
+    background-color: rgba(206, 203, 203, 0.836);
+    max-width: 100%;
+    height: auto;
+    transform: translateZ(0);
+    transform-style: preserve-3d;
+    z-index: 1;
 }
 .mainHeader{
     font-family: "Montserrat",sans-serif;

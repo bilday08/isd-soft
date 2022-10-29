@@ -24,6 +24,14 @@ div{
     backface-visibility: hidden;
     box-sizing: border-box;
 }
+#myVideo:before{
+    content: "";
+    background-color: rgba(206, 203, 203, 0.836);
+    max-width: 100%;
+    height: auto;
+    transform: translateZ(0);
+    transform-style: preserve-3d;
+}
 .mainHeader{
     font-family: "Montserrat",sans-serif;
     font-weight: 400;

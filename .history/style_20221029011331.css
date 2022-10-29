@@ -23,6 +23,15 @@ div{
     perspective: 1000;
     backface-visibility: hidden;
     box-sizing: border-box;
+    z-index: 1;
+}
+.translucent-layer{
+    background-color: rgba(197, 33, 33, 0.836);
+    max-width: 180rem;
+    height: auto;
+    transform: translateZ(0);
+    transform-style: preserve-3d;
+    z-index: 0;
 }
 .mainHeader{
     font-family: "Montserrat",sans-serif;
