@@ -316,15 +316,104 @@ img.btMainLogo {
     color: #000;
 }
 .bt_bb_headline_tag{
-    font-size: 3.75rem;
+    font-size: 5.5rem;
     display: block;
     text-decoration: none;
 }
-.bt_bb_headline_content{
+/* .bt_bb_headline_content{
+    margin-top: 9rem;
+    margin-left: 35.7rem;
     display: block;
     text-decoration: none;
     position: relative;
-}
+    font-weight: 600;
+} */
 .large{
+    display: block;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 8rem;
+    margin-left: 40rem;
+}
+.content_color:before{
+    -webkit-mask-image: url(gfx/variable-underline-large.png);
+    mask-image: url(gfx/variable-underline-large.png);
+    background-color: #ff5a00;
+    content: "";
     position: absolute;
+    padding-top: 12px;
+    bottom: -6px;
+    -webkit-mask-size: auto 100%;
+    mask-size: 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    transform: rotate(-1deg);
+    left: -0.1em;
+    right: 49.8%;
+    -webkit-mask-position: bottom left;
+    mask-position: bottom left;
+    transform-origin: 100% 50%;
+    z-index: 1;
+}
+.content_color{
+    color: #ff5a00;
+    position: relative;
+    z-index: 0;
+}
+.bt_bb_headline_subheadline{
+    display: block;
+    margin-top: 2rem;
+    margin-left: 40.5rem;
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+.line {
+    width: 8rem;
+    height: 3px;
+    background-color: #ff5a00;
+    margin-top: 2rem;
+    margin-left: 40.5rem;
+}
+main{
+    position: relative;
+    left: 0;
+    right: 0;
+}
+.services {
+    margin-left: -0.8rem;
+    margin-right: -0.75rem;
+    margin-top: 10rem;
+    display: block;
+    opacity: 1;
+    /* overflow: hidden; */
+    transition-delay: 200ms;
+    color: #181818;
+    background-color: #f3f3f3;
+    position: relative;
+    background-repeat: no-repeat;
+    height: auto;
+}
+.bt_bb_headline_superheadline{
+    margin-top: 5rem;
+    margin-left: 6rem;
+    display: block;
+    color: #ff5a00;
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.4;
+
+}
+.bt_bb_headline_content1{
+    font-family: "Montserrat",sans-serif;
+    margin-left: 6rem;
+    font-weight: 600;
+    font-size: 4.5rem;
+    line-height: 1.15;
+}
+.bt_bb_headline_content2{
+    display: block;
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin-left: 6rem;
+    margin-top: 3.5rem;
 }
