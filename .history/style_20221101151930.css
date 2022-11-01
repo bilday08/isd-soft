@@ -11,6 +11,10 @@ html{
 div{
     display: inline-block;
 }
+.ex{
+    width: 10rem;
+    background-color: #707070;
+}
 #myVideo {
     position: fixed;
     right: 0;
