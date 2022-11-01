@@ -458,15 +458,17 @@ p{
 .size-full{
     width: 7rem;
     height: auto;
+    margin-top: 1rem;
     margin-left: 6.5rem;
-    margin-top: -3rem;
+    position: absolute;
+    top:50%;
+    bottom: 0;
 }
 .bt_bb_headline_image1{
     display: block;
     font-weight: 500;
     font-size: 2.5rem;
-    margin-left: 6.5rem;
-    margin-top: 1rem;
+    position: relative;
 }
 .bt_bb_headline_content_image{
     display: block;
@@ -477,9 +479,5 @@ p{
     font-size: 1.5rem;
     font-family: "Manrope",Arial,Helvetica,sans-serif;
     color: var(--column-inner-primary-color);
-    margin-left: 6.5rem;
-    margin-top: 1rem;
-}
-.bt_bb_row_wrapper{
-    background-image: url(./images/grey.png);
+    margin-left: 0;
 }

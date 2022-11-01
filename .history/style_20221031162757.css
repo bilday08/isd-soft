@@ -458,28 +458,6 @@ p{
 .size-full{
     width: 7rem;
     height: auto;
-    margin-left: 6.5rem;
-    margin-top: -3rem;
-}
-.bt_bb_headline_image1{
-    display: block;
-    font-weight: 500;
-    font-size: 2.5rem;
-    margin-left: 6.5rem;
     margin-top: 1rem;
-}
-.bt_bb_headline_content_image{
-    display: block;
-    word-break: break-word;
-    width: 37.2rem;
-    font-weight: 200;
-    line-height: 1.8em;
-    font-size: 1.5rem;
-    font-family: "Manrope",Arial,Helvetica,sans-serif;
-    color: var(--column-inner-primary-color);
-    margin-left: 6.5rem;
-    margin-top: 1rem;
-}
-.bt_bb_row_wrapper{
-    background-image: url(./images/grey.png);
+    margin-left: 6rem;
 }

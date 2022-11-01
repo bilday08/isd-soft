@@ -389,6 +389,7 @@ main{
     transition-delay: 200ms;
     color: #181818;
     background-color: #f3f3f3;
+    position: relative;
     background-repeat: no-repeat;
     height: auto;
 }
@@ -415,71 +416,16 @@ main{
     font-size: 2.5rem;
     margin-left: 6rem;
     margin-top: 3.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 5=2rem;
 }
 p{
     display: block;
     word-break: break-word;
     margin-left: 6rem;
     width: 64.2rem;
-    font-weight: 200;
+    font-weight: 300;
     line-height: 1.8em;
     font-size: 1.5rem;
     font-family: "Manrope",Arial,Helvetica,sans-serif;
     color: var(--column-inner-primary-color);
-}
-.attachment-full{
-    display: block;
-    margin: 0;
-    line-height: 0;
-    max-width: 100%;
-    height: auto;
-    color: var(--column-inner-primary-color);
-    width: 37.8rem;
-    margin-left: 80rem;
-    margin-top: -22rem;
-}
-.fa-download{
-    color: #707070;
-    text-decoration: none;
-    display: block;
-    margin-right: 0.5rem;
-    margin-left: 89rem;
-}
-.bt_bb_button_text{
-    font-weight: 500;
-    font-size: 1.5rem;
-    font-family: "Montserrat",Arial,Helvetica,sans-serif;
-    order: 2;
-    color: #707070;
-    display: inline-block;
-    text-decoration: none;
-}
-.size-full{
-    width: 7rem;
-    height: auto;
-    margin-left: 6.5rem;
-    margin-top: -3rem;
-}
-.bt_bb_headline_image1{
-    display: block;
-    font-weight: 500;
-    font-size: 2.5rem;
-    margin-left: 6.5rem;
-    margin-top: 1rem;
-}
-.bt_bb_headline_content_image{
-    display: block;
-    word-break: break-word;
-    width: 37.2rem;
-    font-weight: 200;
-    line-height: 1.8em;
-    font-size: 1.5rem;
-    font-family: "Manrope",Arial,Helvetica,sans-serif;
-    color: var(--column-inner-primary-color);
-    margin-left: 6.5rem;
-    margin-top: 1rem;
-}
-.bt_bb_row_wrapper{
-    background-image: url(./images/grey.png);
 }

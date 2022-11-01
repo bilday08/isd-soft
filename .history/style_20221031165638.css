@@ -466,7 +466,6 @@ p{
     font-weight: 500;
     font-size: 2.5rem;
     margin-left: 6.5rem;
-    margin-top: 1rem;
 }
 .bt_bb_headline_content_image{
     display: block;
@@ -478,8 +477,4 @@ p{
     font-family: "Manrope",Arial,Helvetica,sans-serif;
     color: var(--column-inner-primary-color);
     margin-left: 6.5rem;
-    margin-top: 1rem;
-}
-.bt_bb_row_wrapper{
-    background-image: url(./images/grey.png);
 }

@@ -481,5 +481,5 @@ p{
     margin-top: 1rem;
 }
 .bt_bb_row_wrapper{
-    background-image: url(./images/grey.png);
+    mask-image: url(./images/grey.svg);
 }
