@@ -1,0 +1,99 @@
+.animate {
+    transition: transform 1000ms ease-out-expo, opacity 1000ms ease-out-expo;
+}
+
+@for i in range(1, 20) {
+    .animate:not(.bt_bb_section):not(.btArticleListItem):nth-child(#(i)) {
+        transition-delay: math(#(i)*200)ms;
+        @for j in range(1, 20) {
+            .animate:not(.bt_bb_section):nth-child(#(i)) .animate:nth-child(#(j)) {
+                transition-delay: math(#(i)*200 + #(j)*100)ms;
+            }
+        }
+        .bt_bb_content_slider_item & {
+            transition-delay: math(#(i)*200)ms;
+        }
+    }
+}
+
+.animate.bt_bb_section,
+.animate.btArticleListItem {
+    transition-delay: 200ms;
+}
+
+.animate.bt_bb_section {
+    transition-delay: 200ms;
+}
+
+/* Fade In */
+
+.bt_bb_animation_fade_in {
+    opacity: 0;
+    &.animated {
+        opacity: 1;
+    }
+}
+
+/* Move, Move & Fade */
+
+.animate[class*="move_down"] {
+    transform: translate3d(0, -30%, 0);
+    &.bt_bb_separator,
+    &.bt_bb_progress_bar,
+    &.bt_bb_countdown {
+        transform: translate3d(0, -50px, 0);
+    }
+}
+
+.animate[class*="move_up"] {
+    transform: translate3d(0, 30px, 0);
+    &.bt_bb_separator,
+    &.bt_bb_progress_bar,
+    &.bt_bb_countdown {
+        transform: translate3d(0, 50px, 0);
+    }
+}
+
+.animate[class*="move_left"] {
+    transform: translate3d(30%, 0, 0);
+    &.bt_bb_separator,
+    &.bt_bb_progress_bar,
+    &.bt_bb_countdown {
+        transform: translate3d(50px, 0, 0);
+    }
+}
+
+.animate[class*="move_right"] {
+    transform: translate3d(-30%, 0, 0);
+    &.bt_bb_separator,
+    &.bt_bb_progress_bar,
+    &.bt_bb_countdown {
+        transform: translate3d(-50px, 0, 0);
+    }
+}
+
+.animate[class*="move_right"],
+.animate[class*="move_left"],
+.animate[class*="move_up"],
+.animate[class*="move_down"] {
+    &.animated {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/* Zoom in */
+
+.animate[class*="zoom_in"] {
+    transform: scale(.7);
+}
+
+.animate[class*="zoom_out"] {
+    transform: scale(1.3);
+}
+
+.animate[class*="zoom_in"],
+.animate[class*="zoom_out"] {
+    &.animated {
+        transform: scale(1);
+    }
+}

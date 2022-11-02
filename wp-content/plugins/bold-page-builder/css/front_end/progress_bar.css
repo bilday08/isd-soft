@@ -1,0 +1,101 @@
+.bt_bb_progress_bar {
+    overflow: hidden;
+    position: relative;
+    .bt_bb_progress_bar_bg {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 0;
+        opacity: 0.2;
+    }
+    .bt_bb_progress_bar_inner {
+        padding: 0.5em 1em;
+        z-index: 1;
+        transition: transform 500ms ease;
+        transform: translateX(-100%);
+        &.animated {
+            transform: translateX(0%);
+        }
+        :rightAlignSelector {
+            text-align: right;
+        }
+        :leftAlignSelector {
+            text-align: left;
+        }
+        :centerAlignSelector {
+            text-align: center;
+        }
+        .bt_bb_shape_rounded:not(.bt_bb_style_line)& {
+            border-radius: $(softBorderRadius);
+        }
+    }
+    .bt_bb_shape_rounded:not(.bt_bb_style_line)& {
+        border-radius: $(softBorderRadius);
+    }
+    .bt_bb_size_small& {
+        font-size: 0.9em;
+        .bt_bb_progress_bar_inner {
+            padding: 0.3em 0.5em;
+        }
+    }
+    .bt_bb_style_outline& {
+        .bt_bb_progress_bar_bg {
+            background: white;
+        }
+        .bt_bb_progress_bar_inner {
+            color: black;
+            border: 1px solid black;
+        }
+    }
+    .bt_bb_style_line& {
+        .bt_bb_progress_bar_bg {
+            background: white;
+        }
+        .bt_bb_progress_bar_inner {
+            color: black;
+            border-bottom: 2px solid black;
+        }
+    }
+    .bt_bb_style_filled& {
+        .bt_bb_progress_bar_bg {
+            background: white;
+        }
+        .bt_bb_progress_bar_inner {
+            color: white;
+            background: black;
+        }
+    }
+    .rtl & {
+        .bt_bb_progress_bar_inner {
+            float: right;
+            transform: translateX(100%);
+            &.animated {
+                transform: translateX(0%);
+            }
+        }
+    }
+    &.bt_bb_style_outline .bt_bb_progress_bar_bg,
+    &.bt_bb_style_line .bt_bb_progress_bar_bg {
+        background: var(--secondary-color);
+    }
+    &.bt_bb_style_outline .bt_bb_progress_bar_inner,
+    &.bt_bb_style_line .bt_bb_progress_bar_inner {
+        border-color: var(--primary-color);
+        color: var(--primary-color);
+    }
+    &.bt_bb_style_filled .bt_bb_progress_bar_bg {
+        background: var(--primary-color);
+    }
+    &.bt_bb_style_filled .bt_bb_progress_bar_inner {
+        background: var(--secondary-color);
+        color: var(--primary-color);
+    }
+}
+
+@for i in range(1, 20) {
+    .bt_bb_progress_bar:nth-child(#(i)) .bt_bb_progress_bar_inner {
+        transition-delay: math(200 + #(i)*100)ms;
+    }
+}

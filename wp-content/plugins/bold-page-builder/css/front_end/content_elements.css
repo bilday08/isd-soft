@@ -1,0 +1,61 @@
+/* Variables */
+
+@set horizontalPadding 20;
+/* Paddings */
+
+@set gutterWidth 1200;
+/* Gutter */
+
+@set softBorderRadius 5px;
+/* Soft border radius */
+
+@set hardBorderRadius 20px;
+/* Hard border radius */
+
+/* Selectors */
+
+@selector leftAlignSelector :any(.bt_bb_align_right .bt_bb_align_left&, .bt_bb_align_center .bt_bb_align_left&, .bt_bb_align_right .bt_bb_align_left &, .bt_bb_align_center .bt_bb_align_left &, .bt_bb_align_left&, .bt_bb_align_left &);
+@selector rightAlignSelector :any(.bt_bb_align_left .bt_bb_align_right&, .bt_bb_align_center .bt_bb_align_right&, .bt_bb_align_left .bt_bb_align_right &, .bt_bb_align_center .bt_bb_align_right &, .bt_bb_align_right&, .bt_bb_align_right &);
+@selector centerAlignSelector :any(.bt_bb_align_left .bt_bb_align_center&, .bt_bb_align_right .bt_bb_align_center&, .bt_bb_align_left .bt_bb_align_center &, .bt_bb_align_right .bt_bb_align_center &, .bt_bb_align_center&, .bt_bb_align_center &);
+@selector centerAlignSelectorFix :any(.bt_bb_column_inner.bt_bb_align_center .bt_bb_align_center&, .bt_bb_column_inner.bt_bb_align_center .bt_bb_align_inherit&, .bt_bb_column.bt_bb_align_center .bt_bb_align_inherit&, .bt_bb_column.bt_bb_align_center .bt_bb_align_center&);
+/* Base classes */
+
+@import url("base.css");
+/* Sections, rows and columns */
+
+@import url("grid.css");
+/* Content elements */
+
+@import url("sections.css");
+@import url("icons.css");
+@import url("buttons.css");
+@import url("separators.css");
+@import url("headlines.css");
+@import url("texts.css");
+@import url("images.css");
+@import url("service_items.css");
+@import url("tabs.css");
+@import url("accordions.css");
+@import url("video.css");
+@import url("slider.css");
+@import url("post_grid.css");
+@import url("price_list.css");
+@import url("latest_post.css");
+@import url("custom_menu.css");
+@import url("progress_bar.css");
+/*@import url("google_map.css");*/
+
+@import url("open_map.css");
+@import url("cost_calculator.css");
+@import url("animations.css");
+@import url("screens.css");
+@import url("counter.css");
+@import url("twitter_feed.css");
+@import url("insta_feed.css");
+@import url("widgets.css");
+@import url("countdown.css");
+@import url("css-image-grid.css");
+@import url("ie.css");
+/* External libs override */
+
+@import url("magnific-popup.css");

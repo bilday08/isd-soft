@@ -1,0 +1,89 @@
+.bt_bb_map {
+    position: relative;
+    &.bt_bb_map_with_content:not(.bt_bb_map_type_static) {
+        .bt_bb_map_map {
+            height: 100% !important;
+            width: 100% !important;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+    }
+    .bt_bb_map_content {
+        position: relative;
+        display: none;
+        pointer-events: none;
+        .bt_bb_map_with_content& {
+            display: block;
+            .bt_bb_map_type_static& {
+                height: 100% !important;
+                width: 100% !important;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+            }
+        }
+        .bt_bb_map_no_overlay&,
+        .bt_bb_map_no_overlay.bt_bb_map_with_content& {
+            opacity: 0;
+            visibility: hidden;
+        }
+        .bt_bb_map_content_wrapper {
+            display: flex;
+            overflow: hidden;
+            padding: 1em;
+            width: 30%;
+            .bt_bb_map_location {
+                background: white;
+                padding: 1em;
+                opacity: 0;
+                visibility: hidden;
+                flex: 0 0 100%;
+                transition: opacity 300ms ease;
+                order: 1;
+                pointer-events: none;
+                &.bt_bb_map_location_without_content {
+                    visibility: hidden;
+                }
+                &.bt_bb_map_location_show {
+                    opacity: 1;
+                    visibility: visible;
+                    order: 0;
+                    pointer-events: all;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .bt_bb_map .bt_bb_map_content:not(.bt_bb_map_type_static) .bt_bb_map_content_wrapper {
+        width: 50%;
+    }
+}
+
+@media (max-width: 640px) {
+    .bt_bb_map.bt_bb_map_with_content:not(.bt_bb_map_type_static) .bt_bb_map_map {
+        height: 600px !important;
+        position: relative;
+    }
+    .bt_bb_map .bt_bb_map_content:not(.bt_bb_map_type_static) .bt_bb_map_content_wrapper {
+        width: 100%;
+        margin: 0;
+    }
+    .bt_bb_map_type_static.bt_bb_map_with_content.bt_bb_map .bt_bb_map_content {
+        position: relative;
+    }
+}
+
+/*.mapscroll-wrap {
+	width: 100% !important;
+}
+
+.mapscroll-button {
+	right: 24px !important;
+}*/

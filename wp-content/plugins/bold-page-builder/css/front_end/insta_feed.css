@@ -1,0 +1,114 @@
+.bt_bb_instagram,
+.widget_bt_bb_instagram {
+    .btInstaGrid {
+        span {
+            width: 25%;
+            float: left;
+            padding: 0;
+            img {
+                width: 100%;
+            }
+        }
+        span:nth-child(3n + 1) {
+            clear: none;
+        }
+    }
+}
+
+.bt_bb_instagram {
+    &.bt_bb_gap_extrasmall {
+        .btInstaGrid {
+            margin-left: -1px;
+            margin-top: -1px;
+            span {
+                padding-left: 1px;
+                padding-top: 1px;
+            }
+        }
+    }
+    &.bt_bb_gap_small {
+        .btInstaGrid {
+            margin-left: -5px;
+            margin-top: -5px;
+            span {
+                padding-left: 5px;
+                padding-top: 5px;
+            }
+        }
+    }
+    &.bt_bb_gap_normal {
+        .btInstaGrid {
+            margin-left: -0.5em;
+            margin-top: -0.5em;
+            span {
+                padding-left: 0.5em;
+                padding-top: 0.5em;
+            }
+        }
+    }
+    &.bt_bb_gap_large {
+        .btInstaGrid {
+            margin-left: -1em;
+            margin-top: -1em;
+            span {
+                padding-left: 1em;
+                padding-top: 1em;
+            }
+        }
+    }
+}
+
+.bt_bb_instagram {
+    &.bt_bb_columns_1 {
+        .btInstaGrid span {
+            width: 100%;
+        }
+    }
+    &.bt_bb_columns_2 {
+        .btInstaGrid span {
+            width: 50%;
+        }
+    }
+    &.bt_bb_columns_3 {
+        .btInstaGrid span {
+            width: 33.333333%;
+        }
+    }
+    &.bt_bb_columns_4 {
+        .btInstaGrid span {
+            width: 25%;
+        }
+    }
+    &.bt_bb_columns_5 {
+        .btInstaGrid span {
+            width: 20%;
+        }
+    }
+    &.bt_bb_columns_6 {
+        .btInstaGrid span {
+            width: 16.666666%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .bt_bb_instagram.bt_bb_columns_6 {
+        .btInstaGrid span {
+            width: 33.33333%;
+        }
+    }
+    .bt_bb_instagram.bt_bb_columns_4 {
+        .btInstaGrid span {
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .bt_bb_instagram.bt_bb_columns_6,
+    .bt_bb_instagram.bt_bb_columns_5 {
+        .btInstaGrid span {
+            width: 50%;
+        }
+    }
+}

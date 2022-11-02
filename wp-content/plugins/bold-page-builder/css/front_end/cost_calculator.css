@@ -1,0 +1,112 @@
+/* CALCULATOR */
+
+.bt_bb_cost_calculator {
+    .bt_bb_cost_calculator_item {
+        margin: 0 0 1em;
+        input:not([type="checkbox"]),
+        input:not([type="radio"]),
+        input:not([type="submit"]),
+        .bt_bb_widget_select_selected {
+            padding: 0.625em 0.4375em;
+            line-height: 1.1;
+            border: 1px solid grey;
+        }
+        .bt_bb_cost_calculator_item_title {
+            margin: 0 0 0.3em;
+        }
+    }
+    .bt_bb_cost_calculator_total {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        .bt_bb_cost_calculator_total_text {
+            flex: 5 1 auto;
+            background: #ddd;
+            color: #000;
+            padding: 0.8em 1.25em;
+        }
+        .bt_bb_cost_calculator_total_amount {
+            flex: 0 0 auto;
+            background-color: #333;
+            font-weight: 700;
+            color: #fff;
+            padding: 0.8em 2em;
+        }
+    }
+}
+
+/* CALCULATOR - SELECT */
+
+.bt_bb_widget_select {
+    cursor: pointer;
+    position: relative;
+}
+
+.bt_bb_widget_select_selected {
+    border: 1px solid #666;
+    line-height: 1.1;
+    padding: 0.625em 0.4375em;
+    >div:first-child {
+        font-weight: 700;
+    }
+    >div:last-child {
+        margin-top: 0.5em;
+        font-size: 0.875em;
+    }
+}
+
+.bt_bb_widget_select_items {
+    display: none;
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    top: auto;
+    border: 1px solid #666;
+    margin: 0.2em 0 0;
+    background-color: #fff;
+    color: #000;
+    >div[data-value] {
+        line-height: 1.25;
+        padding: 0.625em 0.4375em;
+        >div:first-child {
+            font-weight: 700;
+        }
+        >div:last-child {
+            margin-top: 0.5em;
+            font-size: 0.875em;
+        }
+    }
+    >div[data-value="0"] {
+        display: none;
+    }
+}
+
+.bt_bb_widget_select_items>div:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* CALCULATOR - SWITCH */
+
+.bt_bb_widget_switch {
+    height: 1.5em;
+    width: 3em;
+    background: #ddd;
+    &.on {
+        background: #666;
+    }
+    border-radius: 1em;
+    cursor: pointer;
+    >div {
+        height: 1.5em;
+        width: 1.5em;
+        background: white;
+        border-radius: 1em;
+        border: 0.2em solid #666;
+        transition: transform .2s;
+        .on& {
+            transform: translateX(1.5em);
+        }
+    }
+}

@@ -1,0 +1,151 @@
+/* Tmp 
+.bt_bb_cell_inner {
+	padding: 0 10%;
+}*/
+
+.bt_bb_service {
+    display: inline-flex;
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-flow: row nowrap;
+    :centerAlignSelector {
+        flex-flow: column nowrap;
+        text-align: center;
+    }
+    :leftAlignSelector,
+    :rightAlignSelector {
+        flex-flow: row nowrap;
+        text-align: initial;
+        .rtl & {
+            flex-flow: row-reverse nowrap;
+        }
+    }
+    .bt_bb_icon_holder {
+        transition: all 280ms ease;
+        flex: 1 0 auto;
+        display: block;
+        vertical-align: middle;
+        text-align: center;
+        width: 2em;
+        height: 2em;
+        line-height: 2;
+        order: 1;
+        text-decoration: none;
+        order: 1;
+        align-self: initial;
+        margin-bottom: 0;
+        :rightAlignSelector {
+            order: 2;
+            align-self: initial;
+            margin-bottom: 0;
+        }
+        :leftAlignSelector {
+            order: 1;
+            align-self: initial;
+            margin-bottom: 0;
+        }
+        :centerAlignSelector {
+            align-self: center;
+            margin-bottom: 0.25em;
+        }
+        .bt_bb_shape_square& {
+            border-radius: 0;
+        }
+        .bt_bb_shape_round& {
+            border-radius: 5px;
+        }
+        .bt_bb_shape_circle& {
+            border-radius: 50%;
+        }
+        .bt_bb_size_xsmall& {
+            font-size: 1em;
+            .bt_bb_style_borderless& {
+                font-size: 1.4em;
+            }
+        }
+        .bt_bb_size_small& {
+            font-size: 1.6em;
+            .bt_bb_style_borderless& {
+                font-size: 2em;
+            }
+        }
+        .bt_bb_size_normal& {
+            font-size: 2.4em;
+            .bt_bb_style_borderless& {
+                font-size: 2.8em;
+            }
+        }
+        .bt_bb_size_large& {
+            font-size: 3.4em;
+            .bt_bb_style_borderless& {
+                font-size: 3.6em;
+            }
+        }
+        .bt_bb_size_xlarge& {
+            font-size: 4em;
+            .bt_bb_style_borderless& {
+                font-size: 3.8em;
+            }
+        }
+        .bt_bb_style_borderless& {
+            border: none;
+            width: auto;
+            height: auto;
+            line-height: 1;
+        }
+    }
+    .bt_bb_service_content {
+        flex: 1 1 auto;
+        padding: 0 0 0 1em;
+        order: 2;
+        text-align: left;
+        .bt_bb_service_content_title {
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+        :leftAlignSelector {
+            padding: 0 0 0 1em;
+            order: 2;
+            text-align: left;
+        }
+        :rightAlignSelector {
+            padding: 0 1em 0 0;
+            order: 1;
+            text-align: right;
+        }
+        :centerAlignSelector {
+            flex-flow: column nowrap;
+            text-align: center;
+            width: 100%;
+            order: 2;
+            padding: 0;
+        }
+    }
+    &.bt_bb_style_outline .bt_bb_icon_holder {
+        box-shadow: 0 0 0 1px var(--primary-color, black) inset;
+        color: var(--primary-color, black);
+        background-color: transparent;
+    }
+    &.bt_bb_style_outline:hover .bt_bb_icon_holder {
+        box-shadow: 0 0 0 1em var(--primary-color, black) inset;
+        background-color: var(--primary-color, black);
+        color: var(--secondary-color, white);
+    }
+    &.bt_bb_style_filled .bt_bb_icon_holder {
+        box-shadow: 0 0 0 1em var(--secondary-color, black) inset;
+        color: var(--primary-color, white);
+    }
+    &.bt_bb_style_filled:hover .bt_bb_icon_holder {
+        box-shadow: 0 0 0 1px var(--secondary-color, black) inset;
+        background-color: var(--primary-color, transparent);
+        color: var(--secondary-color, black);
+    }
+    &.bt_bb_style_borderless .bt_bb_icon_holder {
+        color: var(--primary-color);
+    }
+    &.bt_bb_style_borderless:hover .bt_bb_icon_holder {
+        color: var(--secondary-color);
+    }
+}

@@ -1,0 +1,126 @@
+.btCounterHolder {
+    font-size: 3rem;
+    line-height: 0;
+    font-weight: 300;
+    .btCounter {
+        display: block;
+        height: 3rem;
+        overflow: hidden;
+    }
+    span.onedigit {
+        display: inline-block;
+        height: 3rem;
+        transition: all 1s ease 0s;
+    }
+    span.onedigit span {
+        display: block;
+        position: relative;
+        height: 3rem;
+        text-align: center;
+    }
+    .btCountdownHolder {
+        overflow: auto;
+        padding: 0 15%;
+        >span {
+            vertical-align: top;
+            display: inline-block;
+            padding: 0 0 5px;
+        }
+        >span>span {
+            display: inline-block;
+        }
+        >span>span>span {
+            display: block;
+            width: 0.67em;
+            text-align: inherit;
+            transition: transform 0ms ease-out;
+            transform: translateY(-3rem);
+            position: static;
+            overflow: hidden;
+            height: 3rem;
+            line-height: 1;
+        }
+        .days,
+        .hours,
+        .minutes,
+        .seconds {
+            position: relative;
+            margin: 0;
+            float: left;
+            width: 25%;
+        }
+        span[class$="_text"] {
+            position: relative;
+            display: block;
+            text-align: inherit;
+            font-size: .8rem;
+            line-height: 1;
+            padding: 1rem 0 0;
+            margin: .5rem 0 0;
+            text-transform: uppercase;
+        }
+        span[class^="n"],
+        .days span:first-child,
+        .days span:nth-child(2),
+        .days span:nth-child(3) {
+            position: static;
+            overflow: hidden;
+            height: 3rem;
+            line-height: 1;
+        }
+        span[class$="_text"]>span {
+            height: auto !important;
+            transform: none !important;
+            font-size: 1em;
+            line-height: 1.2 !important;
+        }
+        span.separator {
+            display: none;
+        }
+        .days_text span,
+        .hours_text span,
+        .minutes_text span,
+        .seconds_text span {
+            width: auto !important;
+            transform: translate(-50%, -.1em) !important;
+        }
+        .countdown_anim {
+            transition: transform 200ms ease-out;
+            transform: translateY(0px);
+        }
+    }
+}
+
+.btCounterHolder.btCounterLargeSize,
+.btCounterHolder.bt_bb_size_large {
+    font-size: 4.5rem;
+    font-weight: 700;
+    .btCountdownHolder {
+        padding: 0 10%;
+    }
+    .btCounter {
+        height: 4.5rem;
+    }
+    span.onedigit {
+        height: 4.5rem;
+    }
+    span.onedigit span {
+        height: 4.5rem;
+    }
+    .btCountdownHolder {
+        >span>span>span {
+            transform: translateY(-4.5rem);
+            height: 4.5rem;
+        }
+        .countdown_anim {
+            transition: transform 200ms ease-out;
+            transform: translateY(0px);
+        }
+        span[class^="n"],
+        .days span:first-child,
+        .days span:nth-child(2),
+        .days span:nth-child(3) {
+            height: 4.5rem;
+        }
+    }
+}

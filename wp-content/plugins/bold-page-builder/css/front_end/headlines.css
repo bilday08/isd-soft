@@ -1,0 +1,278 @@
+.bt_bb_headline {
+    :rightAlignSelector {
+        text-align: right;
+    }
+    :leftAlignSelector {
+        text-align: left;
+    }
+    :centerAlignSelector {
+        text-align: center;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        display: block;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding: 0;
+        overflow-wrap: inherit;
+        .bt_bb_size_extrasmall& {
+            font-size: 1rem;
+        }
+        .bt_bb_size_small& {
+            font-size: 1.5rem;
+        }
+        .bt_bb_size_medium& {
+            font-size: 2rem;
+        }
+        .bt_bb_size_normal& {
+            font-size: 2.5rem;
+        }
+        .bt_bb_size_large& {
+            font-size: 3rem;
+        }
+        .bt_bb_size_extralarge& {
+            font-size: 3.5rem;
+        }
+        .bt_bb_size_huge& {
+            font-size: 5rem;
+        }
+        .bt_bb_font_weight_normal& {
+            font-weight: normal;
+        }
+        .bt_bb_font_weight_bold& {
+            font-weight: bold;
+        }
+        .bt_bb_font_weight_bolder& {
+            font-weight: bolder;
+        }
+        .bt_bb_font_weight_lighter& {
+            font-weight: 300;
+        }
+        .bt_bb_font_weight_light& {
+            font-weight: 200;
+        }
+        .bt_bb_font_weight_thin& {
+            font-weight: 100;
+        }
+        .bt_bb_font_weight_100& {
+            font-weight: 100;
+        }
+        .bt_bb_font_weight_200& {
+            font-weight: 200;
+        }
+        .bt_bb_font_weight_300& {
+            font-weight: 300;
+        }
+        .bt_bb_font_weight_400& {
+            font-weight: 400;
+        }
+        .bt_bb_font_weight_500& {
+            font-weight: 500;
+        }
+        .bt_bb_font_weight_600& {
+            font-weight: 600;
+        }
+        .bt_bb_font_weight_700& {
+            font-weight: 700;
+        }
+        .bt_bb_font_weight_800& {
+            font-weight: 800;
+        }
+        .bt_bb_font_weight_900& {
+            font-weight: 900;
+        }
+    }
+    .bt_bb_headline_content {
+        display: block;
+        color: inherit;
+        /*font-family: inherit;*/
+        a {
+            color: inherit;
+            box-shadow: none;
+        }
+        .bt_bb_dash_bottom&,
+        .bt_bb_dash_top_bottom& {
+            &:after {
+                content: ' ';
+                display: block;
+                width: 4em;
+                margin: 0.55em 0 0.8em;
+                border-style: solid;
+                border-width: 0 0 2px;
+                :any(.bt_bb_align_right, .bt_bb_align_center) .bt_bb_align_left&,
+                .bt_bb_align_left&,
+                .bt_bb_align_left & {
+                    float: left;
+                }
+                :any(.bt_bb_align_left, .bt_bb_align_center) .bt_bb_align_right&,
+                .bt_bb_align_right&,
+                .bt_bb_align_right & {
+                    float: right;
+                }
+                :any(.bt_bb_align_right, .bt_bb_align_left) .bt_bb_align_center&,
+                .bt_bb_align_center&,
+                .bt_bb_align_center & {
+                    float: none;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+        .bt_bb_dash_top&,
+        .bt_bb_dash_top_bottom& {
+            &:before {
+                content: ' ';
+                display: block;
+                width: 2em;
+                margin: 0 0 0.4em;
+                border-style: solid;
+                border-width: 2px 0 0;
+                :any(.bt_bb_align_right, .bt_bb_align_center) .bt_bb_align_left&,
+                .bt_bb_align_left&,
+                .bt_bb_align_left & {
+                    float: left;
+                }
+                :any(.bt_bb_align_left, .bt_bb_align_center) .bt_bb_align_right&,
+                .bt_bb_align_right&,
+                .bt_bb_align_right & {
+                    float: right;
+                }
+                :any(.bt_bb_align_right, .bt_bb_align_left) .bt_bb_align_center&,
+                .bt_bb_align_center&,
+                .bt_bb_align_center & {
+                    margin-left: auto;
+                    margin-right: auto;
+                    float: none;
+                }
+            }
+        }
+        span {
+            display: block;
+            &:before,
+            &:after {
+                clear: both;
+                content: ' ';
+                line-height: 0;
+                display: table;
+                width: 100%;
+            }
+        }
+    }
+    .bt_bb_headline_superheadline {
+        font-weight: 400;
+        display: block;
+        margin-bottom: 1em;
+        font-size: 0.5em;
+        .bt_bb_superheadline_outside&,
+        .bt_bb_headline_superheadline_outside & {
+            font-size: 1rem;
+        }
+        .bt_bb_superheadline_font_weight_normal& {
+            font-weight: normal;
+        }
+        .bt_bb_superheadline_font_weight_bold& {
+            font-weight: bold;
+        }
+        .bt_bb_superheadline_font_weight_bolder& {
+            font-weight: bolder;
+        }
+        .bt_bb_superheadline_font_weight_lighter& {
+            font-weight: 300;
+        }
+        .bt_bb_superheadline_font_weight_light& {
+            font-weight: 200;
+        }
+        .bt_bb_superheadline_font_weight_thin& {
+            font-weight: 100;
+        }
+        .bt_bb_superheadline_font_weight_100& {
+            font-weight: 100;
+        }
+        .bt_bb_superheadline_font_weight_200& {
+            font-weight: 200;
+        }
+        .bt_bb_superheadline_font_weight_300& {
+            font-weight: 300;
+        }
+        .bt_bb_superheadline_font_weight_400& {
+            font-weight: 400;
+        }
+        .bt_bb_superheadline_font_weight_500& {
+            font-weight: 500;
+        }
+        .bt_bb_superheadline_font_weight_600& {
+            font-weight: 600;
+        }
+        .bt_bb_superheadline_font_weight_700& {
+            font-weight: 700;
+        }
+        .bt_bb_superheadline_font_weight_800& {
+            font-weight: 800;
+        }
+        .bt_bb_superheadline_font_weight_900& {
+            font-weight: 900;
+        }
+    }
+    &:after {
+        clear: both;
+        content: ' ';
+        display: table;
+        width: 100%;
+    }
+    .bt_bb_headline_subheadline {
+        clear: both;
+        .bt_bb_subheadline_font_weight_normal& {
+            font-weight: normal;
+        }
+        .bt_bb_subheadline_font_weight_bold& {
+            font-weight: bold;
+        }
+        .bt_bb_subheadline_font_weight_bolder& {
+            font-weight: bolder;
+        }
+        .bt_bb_subheadline_font_weight_lighter& {
+            font-weight: 300;
+        }
+        .bt_bb_subheadline_font_weight_light& {
+            font-weight: 200;
+        }
+        .bt_bb_subheadline_font_weight_thin& {
+            font-weight: 100;
+        }
+        .bt_bb_subheadline_font_weight_100& {
+            font-weight: 100;
+        }
+        .bt_bb_subheadline_font_weight_200& {
+            font-weight: 200;
+        }
+        .bt_bb_subheadline_font_weight_300& {
+            font-weight: 300;
+        }
+        .bt_bb_subheadline_font_weight_400& {
+            font-weight: 400;
+        }
+        .bt_bb_subheadline_font_weight_500& {
+            font-weight: 500;
+        }
+        .bt_bb_subheadline_font_weight_600& {
+            font-weight: 600;
+        }
+        .bt_bb_subheadline_font_weight_700& {
+            font-weight: 700;
+        }
+        .bt_bb_subheadline_font_weight_800& {
+            font-weight: 800;
+        }
+        .bt_bb_subheadline_font_weight_900& {
+            font-weight: 900;
+        }
+    }
+    color: var(--primary-color);
+    .bt_bb_headline_superheadline {
+        color: var(--secondary-color);
+    }
+}

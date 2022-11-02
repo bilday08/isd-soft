@@ -1,0 +1,292 @@
+.bt_bb_image {
+    display: block;
+    overflow: hidden;
+    >a,
+    >span {
+        display: block;
+        line-height: 0;
+        box-shadow: none !important;
+    }
+    img {
+        display: block;
+        margin: 0;
+        line-height: 0;
+        max-width: 100%;
+        height: auto;
+    }
+    img[src$="svg"] {
+        width: 100%;
+    }
+    &.bt_bb_shape_square {
+        border-radius: 0;
+        img {
+            border-radius: 0;
+        }
+        .bt_bb_image_content {
+            border-radius: 0;
+        }
+    }
+    &.bt_bb_shape_hard-rounded {
+        border-radius: 50%;
+        img {
+            border-radius: 50%;
+        }
+        .bt_bb_image_content {
+            border-radius: 50%;
+        }
+        .bt_bb_image_content_flex {
+            border-radius: 50%;
+        }
+    }
+    &.bt_bb_shape_soft-rounded {
+        border-radius: 5px;
+        img {
+            border-radius: 5px;
+        }
+        .bt_bb_image_content {
+            border-radius: 5px;
+        }
+        .bt_bb_image_content_flex {
+            border-radius: 5px;
+        }
+    }
+    /* Aligment */
+    :leftAlignSelector {
+        float: left;
+    }
+    :leftAlignSelector {
+        +.bt_bb_image {
+            margin-left: 1em;
+        }
+        +.bt_bb_image.bt_bb_align_center {
+            margin: 0 auto;
+        }
+    }
+    :rightAlignSelector {
+        float: right;
+    }
+    :rightAlignSelector {
+        +.bt_bb_image {
+            margin-right: 1em;
+        }
+        +.bt_bb_image.bt_bb_align_center {
+            margin: 0 auto;
+        }
+    }
+    :centerAlignSelector {
+        float: none;
+        display: flex;
+        clear: both;
+        justify-content: center;
+    }
+    :centerAlignSelectorFix {
+        display: inline-block;
+        clear: none;
+        &:only-child {
+            display: flex;
+        }
+    }
+    &:any(.bt_bb_hover_style_zoom-in, .bt_bb_hover_style_to-grayscale, .bt_bb_hover_style_from-grayscale) {
+        >a,
+        >span {
+            display: block;
+        }
+    }
+    /* Hover style - zoom in, grayscale, flip */
+    &.bt_bb_hover_style_ {
+        &zoom-in,
+        &to-grayscale,
+        &from-grayscale,
+        &zoom-in-from-grayscale,
+        &zoom-in-to-grayscale {
+            img {
+                transition: transform 650ms ease-in-out, filter 650ms ease-in-out;
+            }
+        }
+        &zoom-in,
+        &zoom-in-to-grayscale,
+        &zoom-in-from-grayscale {
+            img {
+                transform: scale3d(1, 1, 1);
+            }
+            &:hover img {
+                transform: scale3d(1.1, 1.1, 1.1);
+            }
+        }
+        &to-grayscale,
+        &zoom-in-to-grayscale {
+            img {
+                filter: grayscale(0%);
+            }
+            &:hover img {
+                filter: grayscale(100%);
+            }
+        }
+        &from-grayscale,
+        &zoom-in-from-grayscale {
+            img {
+                filter: grayscale(100%);
+            }
+            &:hover img {
+                filter: grayscale(0%);
+            }
+        }
+        &flip {
+            perspective: 350px;
+            perspective-origin: 50% 50%;
+            transform-origin: 50% 50%;
+            overflow: visible;
+            >a,
+            >span {
+                transition: transform 650ms ease-in-out, filter 650ms ease-in-out;
+            }
+            &:hover>a,
+            &:hover>span {
+                transform-style: preserve-3d;
+                transform: rotateY(-180deg);
+            }
+        }
+        &scroll {
+            height: 300px;
+            overflow: hidden;
+            img {
+                transform: translateY(0);
+                transition: transform 5000ms ease-in-out-quad;
+                .bt_bb_image_scroll_speed_5000& {
+                    transition: transform 5000ms ease-in-out-quad;
+                }
+                .bt_bb_image_scroll_speed_4000& {
+                    transition: transform 4000ms ease-in-out-quad;
+                }
+                .bt_bb_image_scroll_speed_3000& {
+                    transition: transform 3000ms ease-in-out-quad;
+                }
+                .bt_bb_image_scroll_speed_2000& {
+                    transition: transform 2000ms ease-in-out-quad;
+                }
+                .bt_bb_image_scroll_speed_1000& {
+                    transition: transform 1000ms ease-in-out-quad;
+                }
+            }
+            &:hover img {
+                transform: translateY( calc(-100% + 300px));
+            }
+        }
+    }
+    /* Content within image */
+    &.bt_bb_content_exists {
+        position: relative;
+        .bt_bb_image_content {
+            pointer-events: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            .bt_bb_image a,
+            .bt_bb_image span {
+                display: inline-block;
+                line-height: 0;
+            }
+            .bt_bb_image_content_flex {
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                display: flex;
+                align-items: center;
+                overflow: hidden;
+                padding: 1em;
+                .bt_bb_image_content_inner {
+                    width: 100%;
+                    display: block;
+                    * {
+                        pointer-events: all;
+                    }
+                }
+                .bt_bb_content_align_middle& {
+                    align-items: center;
+                }
+                .bt_bb_content_align_bottom& {
+                    align-items: flex-end;
+                }
+                .bt_bb_content_align_top& {
+                    align-items: flex-start;
+                }
+            }
+        }
+    }
+    /* Showing and hiding the content */
+    &.bt_bb_content_display_ {
+        &show-on-hover .bt_bb_image_content {
+            opacity: 0;
+            transition: transform 650ms ease-in-out, opacity 650ms ease-in-out;
+            transform: scale3d(1, 1, .99);
+        }
+        &hide-on-hover .bt_bb_image_content {
+            opacity: 1;
+            transition: transform 650ms ease-in-out, opacity 650ms ease-in-out;
+            transform: scale3d(1, 1, 1);
+        }
+        &show-on-hover:hover .bt_bb_image_content {
+            transform: scale3d(1, 1, 1);
+            opacity: 1;
+        }
+        &hide-on-hover:hover .bt_bb_image_content {
+            opacity: 0;
+            transform: scale3d(1, 1, .99);
+        }
+    }
+    /* Showing and hiding the content - FLIP special case */
+    &.bt_bb_hover_style_flip.bt_bb_content_display_ {
+        &always {
+            .bt_bb_image_content {
+                transform: rotateY(0deg);
+                transition: transform 650ms ease-in-out;
+                :hover& {
+                    transform: rotateY(-180deg);
+                }
+            }
+        }
+        &show-on-hover {
+            >a,
+            >span {
+                transition: transform 650ms ease-in-out;
+            }
+            &:hover>a,
+            &:hover>span {
+                transform: rotateY(-180deg);
+            }
+            .bt_bb_image_content {
+                transform: rotateY(180deg);
+                transition: transform 650ms ease-in-out, opacity 650ms ease-in-out;
+            }
+        }
+        &show-on-hover:hover {
+            .bt_bb_image_content {
+                transform: rotateY(0deg);
+            }
+        }
+        &hide-on-hover {
+            >a,
+            >span {
+                transition: transform 650ms ease-in-out;
+                transform: rotateY(180deg);
+            }
+            &:hover>a,
+            &:hover>span {
+                transform: rotateY(0deg);
+            }
+            .bt_bb_image_content {
+                transform: rotateY(0deg);
+                transition: transform 650ms ease-in-out, opacity 650ms ease-in-out;
+            }
+        }
+        &hide-on-hover:hover {
+            .bt_bb_image_content {
+                transform: rotateY(-180deg);
+            }
+        }
+    }
+}

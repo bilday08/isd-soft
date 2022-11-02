@@ -1,0 +1,438 @@
+/*
+ Theme Name:   Ippsum Child
+ Theme URI:    http://ippsum.bold-themes.com
+ Description:  Ippsum child theme
+ Author:       BoldThemes
+ Author URI:   http://bold-themes.com
+ Template:     ippsum
+ Version:      1.0.0
+ Tags:         one-column, right-sidebar, custom-menu, featured-images, sticky-post, theme-options, threaded-comments, translation-ready
+ Text Domain:  ippsum-child
+*/
+
+/* Theme customization starts here
+-------------------------------------------------------------- */
+
+.btArticleAuthor a {
+    margin-left: 10px;
+}
+
+div.wpforms-container .wpforms-form .choices[data-type*="select-one"] .choices__item {
+    opacity: 0.9 !important;
+}
+
+.specialfont .bt_bb_accordion_item_title {
+    font-family: "Manrope", Arial, Helvetica, sans-serif !important;
+    font-size: 16px !important;
+}
+
+.bt_bb_testimonial .bt_bb_headline_content {
+    font-size: 16px !important;
+}
+
+.bt_bb_testimonial .bt_bb_headline_content,
+.bt_bb_testimonial .bt_bb_headline .bt_bb_headline_superheadline,
+.bt_bb_testimonial .bt_bb_headline .bt_bb_headline_subheadline {
+    font-family: "Manrope", Arial, Helvetica, sans-serif !important;
+}
+
+.specialfont.bt_bb_accordion .bt_bb_accordion_item:before {
+    font-size: 1.6em;
+}
+
+.bt_bb_custom_menu {
+    font-size: 17px !important
+}
+
+.bt_bb_row.specialgap .bt_bb_column.bt_bb_padding_text_indent .bt_bb_column_content {
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+}
+
+.menuPort {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.menuPort nav>ul>li>a {
+    line-height: 80px
+}
+
+.btMenuHorizontal .topBarInMenu {
+    height: 80px
+}
+
+div.btButtonWidget .btButtonWidgetLink .btButtonWidgetContent span.btButtonWidgetText {
+    font-weight: 500;
+    font-size: 16px
+}
+
+#CybotCookiebotDialog.CybotEdge #CybotCookiebotDialogFooter .CybotCookiebotDialogBodyButton:not(:first-of-type),
+#CookiebotWidget-btn-change {
+    background-color: #f55800 !important;
+    border-color: #eb5600 !important;
+    color: #fff !important;
+}
+
+#CybotCookiebotDialog.CybotEdge #CybotCookiebotDialogFooter .CybotCookiebotDialogBodyButton:not(:first-of-type):hover,
+.CookiebotWidget-logo:hover,
+#CookiebotWidget-btn-change:hover,
+.CookiebotWidget-show-consent-details:active,
+.CookiebotWidget-show-consent-details:focus {
+    box-shadow: none !important;
+}
+
+#CybotCookiebotDialog.CybotEdge #CybotCookiebotDialogFooter .CybotCookiebotDialogBodyButton,
+#CookiebotWidget-btn-withdraw {
+    border-color: #231f20 !important;
+}
+
+#CybotCookiebotDialogHeader,
+.CybotCookiebotDialogBodyBottomWrapper,
+.CookiebotWidget-main-logo {
+    display: none !important;
+}
+
+#CookiebotWidget,
+#CybotCookiebotDialog {
+    font-family: "Manrope", Arial, Helvetica, sans-serif !important;
+}
+
+.btStickyHeaderActive.btMenuHorizontal .mainHeader .btLogoArea .logo img {
+    height: calc(125px*0.6) !important;
+}
+
+ul.sub-menu li a {
+    text-transform: initial !important
+}
+
+.bt_bb_latest_posts_item_category .post-categories li a,
+.bt_bb_latest_posts_item_date,
+.bt_bb_latest_posts_item_author {
+    font-weight: 600;
+}
+
+.bt_bb_latest_posts_item_category .post-categories {
+    font-weight: 600 !important;
+    font-family: 'Montserrat';
+    color: #ff5a00;
+}
+
+.bt_bb_latest_posts .bt_bb_latest_posts_item .bt_bb_latest_posts_item_content .bt_bb_latest_posts_item_meta span,
+.bt_bb_latest_posts .bt_bb_latest_posts_item .bt_bb_latest_posts_item_content .bt_bb_latest_posts_item_meta .bt_bb_latest_posts_item_date span {
+    color: #4d4d4d !important
+}
+
+.btArticleComments,
+.btArticleAuthor:after,
+section.btComments.gutter {
+    display: none !important;
+}
+
+.home .bt_bb_style_accent.bt_bb_latest_posts .bt_bb_latest_posts_item .bt_bb_latest_posts_item_image {
+    max-height: 235px;
+}
+
+.page-id-6345 .bt_bb_style_accent.bt_bb_latest_posts .bt_bb_latest_posts_item .bt_bb_latest_posts_item_image {
+    max-height: 235px;
+}
+
+.page-id-2488 .bt_bb_card_image {
+    max-height: 260px;
+}
+
+div.btButtonWidget .btButtonWidgetLink {
+    padding: 10px
+}
+
+.specialgap .bt_bb_size_small.bt_bb_headline.bt_bb_subheadline .bt_bb_headline_subheadline {
+    font-family: "Manrope", Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.specialgap .bt_bb_card_icon .bt_bb_color_scheme_3.bt_bb_button.bt_bb_style_clean a {
+    color: #fff !important
+}
+
+.btMenuHorizontal .menuPort>nav>ul>li {
+    padding: 0 35px 0 0;
+}
+
+html.touch :not(.rtl).btMenuHorizontal .menuPort>nav>ul>li.menu-item-has-children {
+    padding: 0 35px 0 0;
+}
+
+html.touch .rtl.btMenuHorizontal .menuPort>nav>ul>li.menu-item-has-children {
+    padding: 0 0 0 35px;
+}
+
+.btSiteFooter .bt_bb_text p {
+    font-size: 1em;
+    line-height: 1.3;
+}
+
+.home2 .bt_bb_section[class*="dark_solid"]:before {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 1) 120%);
+}
+
+.home .videofadebg .bt_bb_port {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 1) 120%) !important;
+}
+
+.page-id-6345 .bt_bb_section[class*="dark_solid"]:before {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 1) 120%);
+}
+
+.page-id-6090 .bt_bb_section[class*="dark_solid"]:before {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.page-id-5179 .bt_bb_section[class*="dark_solid"]:before {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.single-portfolio .bt_bb_section[class*="dark_solid"]:before {
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.single-portfolio .bt_bb_section {
+    background-position: center center !important;
+}
+
+@media screen and (max-device-width: 640px) {
+    .page-id-5179 .bt_bb_section {
+        background-position: right center;
+    }
+}
+
+.page-id-6075 .bt_bb_section {
+    background-position: bottom center !important;
+}
+
+.page-id-5150 .bt_bb_section,
+.page-id-7144 .bt_bb_section {
+    background-position: center center !important;
+}
+
+.page-id-7007 .bt_bb_section {
+    background-position: bottom center !important;
+}
+
+.search .bt_bb_section {
+    background-image: url(/wp-content/uploads/2022/08/1614407995_35-p-biznes-fon-temnii-44-1-scaled.jpg) !important;
+}
+
+.home .bt_bb_section,
+.page-id-6345 .bt_bb_section {
+    background-position: center
+}
+
+.search .btPageHeadline {
+    color: #fff
+}
+
+.whitehead .bt_bb_headline_subheadline {
+    color: #fff !important
+}
+
+.btLogoArea .logo img.btMainLogo {
+    height: 100px;
+    margin-top: 10px;
+}
+
+.btMenuVertical .btLogoArea .logo img.btMainLogo {
+    height: 100px;
+    margin-top: 0px;
+}
+
+.btMenuVertical .btLogoArea .logo img.btAltLogo {
+    height: 30px;
+}
+
+.btMenuVertical .btLogoArea .logo {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.imgpadleft15 .bt_bb_image img {
+    padding-left: 15px !important;
+}
+
+.btMenuVertical .mainHeader .topBar .btIconWidget.btWidgetWithText {
+    padding-top: 0.5em;
+}
+
+.btArticleDate:after {
+    display: none;
+}
+
+div.wpforms-container-full .wpforms-form input[type=submit],
+div.wpforms-container-full .wpforms-form button[type=submit],
+div.wpforms-container-full .wpforms-form .wpforms-page-button {
+    border: 0px !important;
+    background: linear-gradient(90deg, #fe6b19 0%, #ff5a00 100%);
+    border-radius: 3px;
+    color: #fff !important;
+    box-shadow: 0 0 0 rgb(0 0 0 / 10%);
+    font-weight: 500;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-size: 16px !important;
+    transition: all 300ms ease;
+}
+
+div.wpforms-container-full .wpforms-form input[type=submit]:hover,
+div.wpforms-container-full .wpforms-form input[type=submit]:focus,
+div.wpforms-container-full .wpforms-form input[type=submit]:active,
+div.wpforms-container-full .wpforms-form button[type=submit]:hover,
+div.wpforms-container-full .wpforms-form button[type=submit]:focus,
+div.wpforms-container-full .wpforms-form button[type=submit]:active,
+div.wpforms-container-full .wpforms-form .wpforms-page-button:hover,
+div.wpforms-container-full .wpforms-form .wpforms-page-button:active,
+div.wpforms-container-full .wpforms-form .wpforms-page-button:focus {
+    box-shadow: 0 5px 8px rgb(0 0 0 / 10%);
+    background: linear-gradient(90deg, #fe6b19 0%, #ff5a00 100%);
+    transform: translateY(-1px);
+    border: 0px;
+}
+
+.footer2 #wpforms-6561-field_1 {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff !important;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.footer2 #wpforms-6561-field_1::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff !important;
+    opacity: 1;
+    /* Firefox */
+}
+
+.footer2 #wpforms-6561-field_1:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #fff !important;
+}
+
+.footer2 #wpforms-6561-field_1::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #fff !important;
+}
+
+#wpforms-6561-field_1-error {
+    color: #f55a00ba;
+}
+
+#wpforms-6495-field_9-container,
+#wpforms-6365-field_9-container,
+#wpforms-6640-field_9-container,
+#wpforms-6692-field_9-container,
+#wpforms-7194-field_9-container,
+#wpforms-7260-field_9-container,
+#wpforms-7443-field_9-container,
+#wpforms-7675-field_9-container {
+    padding: 10px 0px 0px 0px;
+}
+
+#wpforms-6495-field_12-container,
+#wpforms-6365-field_12-container,
+#wpforms-6640-field_10-container,
+#wpforms-6692-field_10-container,
+#wpforms-7194-field_10-container,
+#wpforms-7260-field_12-container,
+#wpforms-7443-field_12-container,
+#wpforms-7675-field_10-container {
+    padding: 0px 0px 10px 0px;
+}
+
+#wpforms-7260 .wpforms-confirmation-container-full {
+    background-color: #fff !important
+}
+
+.portfolio .btArticleHeadline,
+.portfolio .btArticleMedia {
+    display: none;
+}
+
+body.btNoSidebar .portfolio:first-child {
+    margin: 0
+}
+
+.single-portfolio .bt_bb_testimonial .bt_bb_headline_tag {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.page-id-6090 .btLogoArea .logo img.btMainLogo,
+div.wpforms-container-full .wpforms-form .wpforms-recaptcha-container {
+    display: none !important;
+}
+
+div.wpforms-container-full .wpforms-form ul,
+div.wpforms-container-full .wpforms-form label.wpforms-error,
+#wpforms-6640-field_11-container,
+div.wpforms-container-full .wpforms-form .wpforms-field-label,
+#wpforms-6692-field_11-container,
+#wpforms-7194-field_11-container {
+    text-align: left;
+}
+
+@media (max-width: 1259px) {
+    .page-id-7244 .btLogoArea .logo img.btMainLogo {
+        margin-top: 0px;
+        display: none;
+    }
+    .page-id-7628 .btSiteFooter,
+    .page-id-7612 .btSiteFooter,
+    .page-id-7541 .btSiteFooter {
+        display: none;
+    }
+    .page-id-7628 .bt_bb_section,
+    .page-id-7612 .bt_bb_section,
+    .page-id-7541 .bt_bb_section {
+        background-color: rgb(255, 255, 255) !important;
+    }
+    .single-portfolio .btContentWrap .btContent .gutter .port {
+        padding: 0px !important;
+    }
+    .specialmobilefontsize .bt_bb_headline_superheadline {
+        font-size: 12px !important;
+    }
+}
+
+.newsletter .wpforms-submit-container {
+    float: right !important;
+    clear: right !important;
+}
+
+#wpforms-7260 {
+    color: #fff !important;
+}
+
+.newsletterbt {
+    line-height: 18px;
+    padding: 10px 30px !important;
+}
+
+.page-id-2488 h3 {
+    font-family: "Manrope", Arial, Helvetica, sans-serif !important;
+}
+
+.topBarInMenu {
+    display: none;
+}
+
+.single-post .btPrevNextNav .btPrevNext,
+.single-post .btPrevNextNav {
+    display: none !important;
+}
+
+.page-id-7541.btLightSkin,
+.page-id-7612.btLightSkin,
+.page-id-7628.btLightSkin,
+.page-id-7649.btLightSkin,
+.page-id-7678.btLightSkin {
+    color: #000;
+    background-color: #f3f3f3 !important;
+}

@@ -1,0 +1,60 @@
+.bt_bb_custom_menu {
+    >div {
+        display: flex;
+    }
+    &.bt_bb_direction_horizontal {
+        div>ul>li {
+            display: inline-block;
+            float: left;
+            padding: 0 0.25em;
+            .rtl & {
+                float: right;
+            }
+        }
+    }
+    .bt_bb_font_weight_normal& {
+        font-weight: normal;
+    }
+    .bt_bb_font_weight_bold& {
+        font-weight: bold;
+    }
+    .bt_bb_font_weight_bolder& {
+        font-weight: bolder;
+    }
+    .bt_bb_font_weight_lighter& {
+        font-weight: 300;
+    }
+    .bt_bb_font_weight_light& {
+        font-weight: 200;
+    }
+    .bt_bb_font_weight_thin& {
+        font-weight: 100;
+    }
+    .bt_bb_font_weight_100& {
+        font-weight: 100;
+    }
+    .bt_bb_font_weight_200& {
+        font-weight: 200;
+    }
+    .bt_bb_font_weight_300& {
+        font-weight: 300;
+    }
+    .bt_bb_font_weight_400& {
+        font-weight: 400;
+    }
+    .bt_bb_font_weight_500& {
+        font-weight: 500;
+    }
+    .bt_bb_font_weight_600& {
+        font-weight: 600;
+    }
+    .bt_bb_font_weight_700& {
+        font-weight: 700;
+    }
+    .bt_bb_font_weight_800& {
+        font-weight: 800;
+    }
+    .bt_bb_font_weight_900& {
+        font-weight: 900;
+    }
+}

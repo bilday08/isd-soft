@@ -1,0 +1,76 @@
+/* Counter  */
+
+.bt_bb_counter_holder {
+    font-size: 4em;
+    height: 1.2em;
+    line-height: 1.2;
+    overflow: hidden;
+    .bt_bb_counter {
+        display: block;
+        height: query( parent, height);
+        overflow: hidden;
+        span.onedigit {
+            display: inline-block;
+            height: query( parent, height);
+            transition: all 1s ease 0s;
+            &:after {
+                conent: ' ';
+                display: table;
+                width: 100%;
+                clear: both;
+            }
+            span {
+                display: block;
+                height: query( parent, height);
+                overflow: hidden;
+                position: relative;
+                text-align: center;
+            }
+        }
+    }
+    &.bt_bb_size_xsmall {
+        font-size: .8em;
+    }
+    &.bt_bb_size_small {
+        font-size: 1em;
+    }
+    &.bt_bb_size_normal {
+        font-size: 2em;
+    }
+    &.bt_bb_size_large {
+        font-size: 3em;
+    }
+    &.bt_bb_size_xlarge {
+        font-size: 4em;
+    }
+}
+
+/* IE 10 hack*/
+
+/*@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.bt_bb_counter_holder {
+		.bt_bb_counter {
+			span.onedigit:not(.d:any(1,2,3,4,5,6,7,8,9,0)) {
+				span.t {
+					transform: translateY(-10em);
+				}
+			}
+		}
+	}
+}*/
+
+/* Edge hack*/
+
+/*
+@supports (-ms-ime-align:auto) {
+	.bt_bb_counter_holder {
+		.bt_bb_counter {
+			span.onedigit:not(.d:any(1,2,3,4,5,6,7,8,9,0)) {
+				span.t {
+					transform: translateY(-10em);
+				}
+			}
+		}
+	}
+}
+*/

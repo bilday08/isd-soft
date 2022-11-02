@@ -1,0 +1,30 @@
+@supports (-ms-ime-align: auto) {
+    .bt_bb_dash_top.bt_bb_headline .bt_bb_headline_superheadline {
+        display: inline-flex !important;
+    }
+    .bt_bb_dash_top_bottom.bt_bb_headline .bt_bb_headline_superheadline {
+        display: inline-flex !important;
+    }
+    .btCareer.btLight {
+        input::-ms-input-placeholder {
+            color: white !important;
+        }
+        textarea::-ms-input-placeholder {
+            color: white !important;
+        }
+    }
+    .btContact.btLeftIcon.btLight.btOutline {
+        input::-ms-input-placeholder {
+            color: white !important;
+        }
+        textarea::-ms-input-placeholder {
+            color: white !important;
+        }
+    }
+    .bt_bb_section.bt_bb_bottom_coverage_left_triangle .bt_bb_section_bottom_coverage,
+    .bt_bb_section.bt_bb_bottom_coverage_right_triangle .bt_bb_section_bottom_coverage,
+    .bt_bb_section.bt_bb_bottom_coverage_left_large_triangle .bt_bb_section_bottom_coverage,
+    .bt_bb_section.bt_bb_bottom_coverage_right_large_triangle .bt_bb_section_bottom_coverage {
+        bottom: -2px;
+    }
+}
